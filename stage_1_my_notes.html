@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+    <!-- 
+    Name: Genaro Hernandez Jr.
+    Date: 5/24/15
+    Description:
+        This web page records my notes up to the Stage 1 Work Session.
+        I altered the organization of my original notes to, in my opinion,
+        reflect a more logical grouping of concepts.
+    -->
+    <head>
+        <title>Intro to Programming Nanodegree (IPND) Notes </title>
+        <link rel="stylesheet" href="stage_1_my_notes.css">
+    </head>
+    <body>
+        <h1>IMPORTANT CONCEPTS FOR BUILDING A WEBSITE</h1>
+        <div class="table_of_contents">
+            <h2>TABLE OF CONTENTS</h2>
+            <ol>
+                <li>
+                    <a href="#lesson_1">Basic Concepts of the World Wide Web (WWW)</a>
+                    <!-- The '#' char is necessary in the 'href' attribute to link to the same page. -->
+                    <ul>
+                        <li>
+                            <a href="#lesson_1_1">How the WWW works</a>
+                        </li>
+                        <li>
+                            <a href="#lesson_1_2">The 3 programming languages of the WWW</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#lesson_2">A closer look at HTML</a>
+                    <ul>
+                        <li>
+                            <a href="#lesson_2_1">How HTML works</a>
+                        </li>
+                        <li>
+                            <a href="#lesson_2_2">The general structure of an HTML document</a>
+                        </li>
+                        <li>
+                            <a href="#lesson_2_3">Everything on a web page is a box</a>
+                        </li>
+                        <li>
+                            <a href="#lesson_2_4">The Document Object Model</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#lesson_3">The significance of CSS</a>
+                    <ul>
+                        <li>
+                            <a href="#lesson_3_1">How CSS works</a>
+                        </li>
+                        <li>
+                            <a href="#lesson_3_2">Avoiding code repetition</a>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="lesson">
+            <h2 id="lesson_1">BASIC CONCEPTS OF THE WORLD WIDE WEB (WWW)</h2>
+            <div class="concept" id ="lesson_1_1">
+            <div class="concept_title">
+                How the WWW works
+            </div>
+            <div class="concept_description">
+                <p>
+                The World Wide Web (WWW) is a collection of documents in the HyperText Markup Language (HTML) format. 
+                Hyperlinks are what make the web web-like. The WWW uses special computers called servers. Servers are 
+                computers that are optimized for sitting in a closet and hosting files. A browser makes requests to 
+                servers via the Internet using HTTP. HTTP is a protocol for communicating with servers.
+                </p>
+            </div>
+            </div>
+            <div class="concept" id="lesson_1_2">
+            <div class="concept_title">
+               The 3 Programming Languages of Web Development
+            </div>
+            <div class="concept_description">
+                <p>
+                The 3 programming languages of web development are HTML, CSS, and JavaScript. As previously mentioned, HTML 
+                controls the structure of a web page. CSS stands for Cascading Style Sheets and is used to control the style 
+                (i.e., look and formatting) of a web page written in a markup language. JavaScript provides interactive 
+                components to a web page.
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="lesson">
+            <h2 id="lesson_2">A CLOSER LOOK AT HTML</h2>
+            <div class="concept" id="lesson_2_1">
+            <div class="concept_title">
+                How HTML works
+            </div>
+            <div class="concept_description">
+                <p>
+                HTML is the standard markup language for creating web pages. HTML controls the structure of a web page 
+                and consists of:
+                </p>
+                    <ul>
+                        <li>Text content (what you see)</li>
+                        <li>Markup (what the content looks like)</li>
+                        <li>References to other documents (e.g. images, video)</li>
+                        <li>Links to other pages</li>
+                    </ul>
+                <p>
+                HTML uses tags to markup a page. There are opening and closing tags. An element consists of opening tag, 
+                its content, and it's closing tag. An element has form '&lt;tag_name tag_attribute="some_val"&gt; 
+                content_to_display &lt;/tag_name&gt;'. A tag does not always have an attribute. Furthermore, some elements 
+                do not have a closing tag. For instance, the '&lt;img src="some_val" alt="some_other_val"&gt;'
+                A list of HTML tags in alphabetical order can be found on the <a href="http://www.w3schools.com/tags/">
+                W3SCHOOLS</a> website.
+                </p>
+            </div>
+            </div>
+            <div class="concept">
+            <div class="concept_title" id="lesson_2_2">
+                The general structure of an HTML document
+            </div>
+            <div class="concept_description">
+                <p>
+                The general structure of an HTML document is shown below. An HTML document contains a declaration at the top
+                that specifies the file is of type HTML, an html element, a head and body section inside of the html element.
+                </p>
+                <ul>
+                    <li>&lt;!DOCTYPE HTML&gt;</li>
+                    <li>&lt;html&gt;</li>
+                    <li><ul>
+                        <li>&lt;head&gt;</li>
+                        <li><ul>
+                            <li>&lt;title&gt;some_title&lt;/title&gt;</li>
+                        </ul></li>
+                        <li>&lt;/head&gt;</li>
+                        <li>&lt;body&gt;</li>
+                            <li><ul>
+                                <li>Web page body</li>
+                            </ul></li>
+                        <li>&lt;/body&gt;</li>
+                    </ul></li>
+                    <li>&lt;/html&gt;</li>
+                </ul>
+                <p>
+                An online <a href="http://validator.w3.org/#validate_by_input">
+                HTML validator</a> can be used to validate HTML code.
+                </p>
+            </div>
+            </div>
+            <div class="concept">
+            <div class="concept_title" id="lesson_2_3">
+                Everything on a web page is a box
+            </div>
+            <div class="concept_description">
+                <p>
+                It's amazing that everything on a web page is a box. Web developers will <em>boxify a design</em>. Boxify is a
+                technical term. To <em>boxify a design</em> means to take a web page mock-up and to determine the boxes needed
+                for every piece of information in the mock-up (e.g. an image or text). Boxes can exist inside of boxes inside 
+                of boxes, and so on, until one gets to a very simple element such as an image or a paragraph. Boxes can be 
+                created on a web page by using the &lt;div&gt; tag.
+                </p>
+            </div>
+            </div>
+            <div class="concept">
+            <div class="concept_title" id="lesson_2_4">
+                Document Object Model
+            </div>
+            <div class="concept_description">
+                <p>
+                The Document Object Model (DOM) is a cross-platform and language-independent standard for representing and 
+                interacting with objects in HTML (and other markup languages). In this standard, HTML elements (i.e., an 
+                opening and closing tag with their content) form nodes. These nodes are further organized into a tree 
+                structure known as the DOM tree. Every web pages is represented as a DOM tree.
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="lesson">
+            <h2 id="lesson_3">THE SIGNIFICANCE OF CSS</h2>
+            <div class="concept" id="lesson_3_1">
+            <div class="concept_title">
+                How CSS works
+            </div>
+            <div class="concept_description">
+                <p>
+                CSS is used to add style to a web page. Style refers to the look or appearance of a web page. CSS
+                essentially selects an HTML tag or class to style. Hence, CSS uses selector. In either case, a rule 
+                is specified to add the desired style. The rule employs a 'attribute: value;' pair. For example,
+                </p>
+                    <ul>
+                        <li>p {</li>
+                        <li>color: red</li>
+                        <li>}</li>
+                    </ul>
+                <p>makes it so every p tag uses red font color. Similarly,</p>
+                    <ul>
+                        <li>.description {</li>
+                        <li>background-color: blue</li>
+                        <li>}</li>
+                    </ul> 
+                <p>gives a blue background color to every instance of the description class. More information about
+                CSS selectors can be found on the <a href="https://css-tricks.com/how-css-selectors-work/">
+                CSS-TRICKS</a> website.
+                </p>
+                <p>
+                There are 3 ways to include CSS styling in a web page:
+                </p>
+                    <ol>
+                        <li>Write CSS in the head of the HTML. This is good for small projects.</li>
+                        <li>Write the style inline with the HTML. This is generally a very bad idea
+                        because it leads to a lot of repeated code and can lead to a lot of errors.</li>
+                        <li>Link the HTML to a separate CSS file. This is good for large projects.
+                        For example, for a main.html and main.css file, a link tag would be added inside
+                        of the head element:
+                        <ul>
+                            <li>&lt;head&gt;</li>
+                            <li><ul>
+                                <li>&lt;link rel="stylesheet" href="main.css"&gt;</li>
+                            </ul></li>
+                            <li>&lt;/head&gt;</li>
+                        </ul>
+                        The main.html and main.css should be in the same folder.</li>
+                    </ol>
+                <p>
+                The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+                CSS reference</a> has more information about CSS. An online 
+                <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">
+                CSS validator</a> can be used to validate CSS code.
+                </p>
+            </div>
+            </div>
+            <div class="concept" id="lesson_3_2">
+            <div class="concept_title">
+                Avoiding code repetition
+            </div>
+            <div class="concept_description">
+                <p>
+                Inheritance is a key feature of CSS that helps avoid code repetition. That is, it helps a programmer
+                from having to repeat the same code over and over again. Inheritance means descendant elements inherit
+                CSS properties of an ancestor element that encloses them. This is best illustrated with an example.
+                Suppose the following is in a CSS file
+                </p>
+                    <ul>
+                        <li>h1 {</li>
+                        <li>color: pink;</li>
+                        <li>}</li>
+                    </ul>
+                and this is in a HTML file
+                    <ul>
+                        <li>&lt;h1&gt;</li>
+                        <li><ul>
+                            <li>This is to &lt;em&gt; illustrate &lt;/em&gt; the concept of inheritance.
+                        </ul></li>
+                        <li>&lt;/h1&gt;</li>
+                    </ul>
+                <p>Then unless a color has been assigned to the em element, the emphasized element will print text in
+                pink color. This behavior arises from the em tag inheriting the color style of the parent h1 element.
+                Inheritance prevents certain styles from being declared over and over again because those styles can be
+                specified in a style sheet (see the 3rd way to <a href="#lesson_3_1">include CSS styling in a web page</a>). 
+                </p>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

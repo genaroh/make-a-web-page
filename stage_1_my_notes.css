@@ -1,0 +1,89 @@
+/*
+    Name: Genaro Hernandez Jr.
+    Date: 5/24/2015
+    Description:
+        A CSS file for stage 1 of my Intro to Programming
+        Nanodegree.
+*/
+
+a {
+    text-decoration:none;
+    color: #0040FF;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: #0040FF; 
+}
+
+body {
+    background-color: #0B0B3B;
+    padding: 20px 10px;     /* Top, bottom paddings are 20px. Left, right paddings are 10px */
+    font-family: Arial;
+    max-width: 2000px;
+    margin: 0 auto;         /* Top, bottom margins are 0. Left, right margins are automatically set. */
+    font-size: 1.4em;       /* Font size is 1.4 times the normal font size. */
+}
+
+h1 {
+    text-align: center;
+    color: white; /*#08088A;*/
+}
+
+h2 {
+    text-align: center;
+    color: #04B486;
+}
+
+p {
+    margin: 10px 0;         /* Top, bottom margins are 10px. Left, right margins are 0. */
+}
+
+ol {
+    color: #0040FF;
+}
+
+p + ol {
+    color: #424242;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 44px;      /* Each line of text should occupy 44 pixels of height (good for mobile usage and fat fingers) */
+}
+
+.table_of_contents {
+    background-color: #CED8F6;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+.lesson {
+    background-color: #CEECF5;
+    border-radius: 20px;    /* For curved edges */
+    color: #424242;         /* Font color */
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.concept {
+    background-color: white;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.concept_title {
+    margin: 8px;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.concept_description {
+    font-weight: normal;
+    margin: 6px;
+}
